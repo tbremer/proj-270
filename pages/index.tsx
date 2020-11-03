@@ -24,20 +24,20 @@ function TheCount() {
         <div
           className="text-white bg-dem"
           style={{
-            fontWeight: 600,
             padding: '1rem',
             flex: 1,
             borderRadius: '.25rem',
             borderTopRightRadius: 0,
             borderBottomRightRadius: 0,
+            textAlign: 'right',
           }}
         >
-          Biden <p style={{ margin: 0, marginTop: '.125rem', fontSize: '.85rem' }}>0 electoral votes</p>
+          <p style={{ margin: 0, fontWeight: 600 }}>Biden</p>
+          <p style={{ margin: 0, marginTop: '.125rem', fontSize: '.85rem' }}>0 electoral votes</p>
         </div>
         <div
           className="text-white bg-rep"
           style={{
-            fontWeight: 600,
             padding: '1rem',
             flex: 1,
             borderRadius: '.25rem',
@@ -45,7 +45,8 @@ function TheCount() {
             borderBottomLeftRadius: 0,
           }}
         >
-          Trump <p style={{ margin: 0, marginTop: '.125rem', fontSize: '.85rem' }}>0 electoral votes</p>
+          <p style={{ margin: 0, fontWeight: 600 }}>Trump</p>
+          <p style={{ margin: 0, marginTop: '.125rem', fontSize: '.85rem' }}>0 electoral votes</p>
         </div>
       </div>
     </section>
