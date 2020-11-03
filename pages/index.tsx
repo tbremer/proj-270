@@ -10,6 +10,48 @@ interface StaticProps {
   props: RunTimeProps;
 }
 
+function TheCount() {
+  return (
+    <section style={{ marginBottom: '2rem' }}>
+      <h2>The Race</h2>
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          boxSizing: 'border-box',
+        }}
+      >
+        <div
+          className="text-white bg-dem"
+          style={{
+            fontWeight: 600,
+            padding: '1rem',
+            flex: 1,
+            borderRadius: '.25rem',
+            borderTopRightRadius: 0,
+            borderBottomRightRadius: 0,
+          }}
+        >
+          Biden <p style={{ margin: 0, marginTop: '.125rem', fontSize: '.85rem' }}>0 electoral votes</p>
+        </div>
+        <div
+          className="text-white bg-rep"
+          style={{
+            fontWeight: 600,
+            padding: '1rem',
+            flex: 1,
+            borderRadius: '.25rem',
+            borderTopLeftRadius: 0,
+            borderBottomLeftRadius: 0,
+          }}
+        >
+          Trump <p style={{ margin: 0, marginTop: '.125rem', fontSize: '.85rem' }}>0 electoral votes</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function Home({ data: states }: RunTimeProps) {
   const bigsix = states.filter((s) => s.type === Importance.BigSix);
   const rest = states.filter((s) => s.type === Importance.NotSignificant);
@@ -25,9 +67,11 @@ export default function Home({ data: states }: RunTimeProps) {
       </h1>
       <hr style={{ marginBottom: '2rem' }} />
 
+      <TheCount />
+
       <StateList title="Big six to watch" states={bigsix} />
-      <StateList title="Biden needs to win" states={biden} party={Party.Dem} />
-      <StateList title="Trump needs to win" states={trump} party={Party.Rep} />
+      <StateList title="Biden needs to win" states={biden} />
+      <StateList title="Trump needs to win" states={trump} />
       <StateList title="Remaining states" states={rest} />
 
       <hr />
