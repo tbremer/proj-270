@@ -1,7 +1,20 @@
-export default function TitledList({ title, states }: { title: String; states: Array<State> }) {
+import { State } from 'data/state';
+import { Party } from 'data/party';
+
+export default function TitledList({
+  title,
+  states,
+  party = Party.Neutral,
+}: {
+  title: String;
+  states: Array<State>;
+  party?: Party;
+}) {
   return (
     <>
-      <h2 style={{ margin: 0 }}>{title}</h2>
+      <h2 className={party === Party.Dem ? 'text-dem' : party === Party.Rep ? 'text-rep' : ''} style={{ margin: 0 }}>
+        {title}
+      </h2>
       <ol
         style={{
           display: 'flex',

@@ -1,4 +1,5 @@
 import { stateData, Importance, State } from 'data/state';
+import { Party } from 'data/party';
 import StateList from 'components/State';
 
 interface RunTimeProps {
@@ -16,12 +17,17 @@ export default function Home({ data: states }: RunTimeProps) {
   const trump = states.filter((s) => s.type === Importance.TrumpNeeds);
   return (
     <>
-      <h1>2020 presidential Election Tracker</h1>
+      <h1>
+        <span className="text-dem">2020 </span>
+        <span className="text-rep">Presidential </span>
+        <span className="text-dem">Election </span>
+        <span className="text-rep">Tracker </span>
+      </h1>
       <hr style={{ marginBottom: '2rem' }} />
 
       <StateList title="Big six to watch" states={bigsix} />
-      <StateList title="Biden needs to win" states={biden} />
-      <StateList title="Trump needs to win" states={trump} />
+      <StateList title="Biden needs to win" states={biden} party={Party.Dem} />
+      <StateList title="Trump needs to win" states={trump} party={Party.Rep} />
       <StateList title="Remaining states" states={rest} />
 
       <hr />

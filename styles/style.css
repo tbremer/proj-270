@@ -34,3 +34,16 @@ a:active {
 a:visited {
     color: #33678e;
 }
+
+.text-dem {
+    color: #28a0cb;
+}
+.text-rep {
+    color: #f45d79;
+}
+.bg-dem {
+    background-color: #28a0cb;
+}
+.bg-rep {
+    background-color: #f45d79;
+}
