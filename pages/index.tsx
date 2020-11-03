@@ -11,34 +11,45 @@ interface State {
   type: Importance;
 }
 
-interface Data {
+interface RunTimeProps {
   data: Array<State>;
 }
 
-interface Props {
-  props: Data;
+interface StaticProps {
+  props: RunTimeProps;
 }
 
 function TitledList({ title, states }: { title: String; states: Array<State> }) {
   return (
-    <>
-      <h2>{title}</h2>
-      <ol>
+    <section
+      style={{
+        border: '1px solid #ccc',
+        borderRadius: '.25rem',
+        backgroundColor: '#efefef',
+        margin: '.75rem',
+        padding: '1rem',
+      }}
+    >
+      <h2 style={{ margin: 0 }}>{title}</h2>
+      <ol style={{ listStyleType: 'decimal-leading-zero' }}>
         {states.map((s) => (
           <li key={s.abbreviation}>{s.name}</li>
         ))}
       </ol>
-    </>
+    </section>
   );
 }
 
-export default function Home({ data: states }) {
-  const bigsix: Array<State> = states.filter((s) => s.type === Importance.BigSix);
+export default function Home({ data: states }: RunTimeProps) {
+  const bigsix = states.filter((s) => s.type === Importance.BigSix);
   const rest = states.filter((s) => s.type === Importance.NotSignificant);
   const biden = states.filter((s) => s.type === Importance.BidenNeeds);
   const trump = states.filter((s) => s.type === Importance.TrumpNeeds);
   return (
     <>
+      <h1>2020 presidential Election Tracker</h1>
+      <hr />
+
       <TitledList title="Big six to watch" states={bigsix} />
       <TitledList title="Biden needs to win" states={biden} />
       <TitledList title="Trump needs to win" states={trump} />
@@ -47,7 +58,7 @@ export default function Home({ data: states }) {
   );
 }
 
-export function getStaticProps(): Props {
+export function getStaticProps(): StaticProps {
   return {
     props: {
       data: [
