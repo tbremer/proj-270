@@ -16,11 +16,11 @@ export default function App({ Component, pageProps }) {
         <meta property="og:description" content="2020 Presidential Election Tracker" />
         <meta property="og:image" content="https://project270.us/logo.png" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:domain" value="https://project270.us/" />
-        <meta property="twitter:title" value="Project 270 Election Tracker" />
-        <meta property="twitter:description" value="2020 Presidential Election Tracker" />
-        <meta property="twitter:creator:id" value="_tbremer" />
-        <meta property="twitter:image" value="https://project270.us/logo.png" />
+        <meta name="twitter:domain" content="https://project270.us/" />
+        <meta property="twitter:title" content="Project 270 Election Tracker" />
+        <meta property="twitter:description" content="2020 Presidential Election Tracker" />
+        <meta property="twitter:creator:id" content="_tbremer" />
+        <meta property="twitter:image" content="https://project270.us/logo.png" />
       </Head>
       <Component {...pageProps} />
     </>
