@@ -8,6 +8,19 @@ export default function App({ Component, pageProps }) {
         <link href="/favicon.png" rel="icon" />
         <title>Project 270 Electoral Tracker</title>
         <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+        <meta name="description" content="2020 Presidential Election Tracker" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://proj-270.tbremer.com/" />
+        <meta property="og:site_name" content="1990 to win" />
+        <meta property="og:title" content="1,990 to win" />
+        <meta property="og:description" content="2020 Presidential Election Tracker" />
+        <meta property="og:image" content="https://proj-270.tbremer.com/logo.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:domain" value="https://proj-270.tbremer.com/" />
+        <meta property="twitter:title" value="Project 270 Election Tracker" />
+        <meta property="twitter:description" value="2020 Presidential Election Tracker" />
+        <meta property="twitter:creator:id" value="_tbremer" />
+        <meta property="twitter:image" value="https://proj-270.tbremer.com/logo.png" />
       </Head>
       <Component {...pageProps} />
     </>
