@@ -49,7 +49,7 @@ function TitledList({ title, states }: { title: String; states: Array<State> }) 
             }}
           >
             <p style={{ fontWeight: 'bold', margin: 0, marginBottom: '.25rem' }}>{s.name}</p>
-            <p style={{ margin: 0, marginBottom: '.25rem' }}>Electoral Votes: {s.electoralVotes}</p>
+            <p style={{ margin: 0, marginBottom: '.25rem' }}>Eligible Electoral Votes: {s.electoralVotes}</p>
           </li>
         ))}
       </ol>
