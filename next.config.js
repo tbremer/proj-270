@@ -2,6 +2,7 @@ const preact = require('preact')
 const withPrefresh = require('@prefresh/next')
 
 module.exports = withPrefresh({
+  target: "serverless",
   webpack(config, { dev, isServer }) {
     // Move Preact into the framework chunk instead of duplicating in routes:
     const splitChunks = config.optimization && config.optimization.splitChunks
