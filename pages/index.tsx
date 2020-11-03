@@ -77,8 +77,8 @@ export default function Home({ data: states }: RunTimeProps) {
 
       <hr />
       <footer>
-        <h4>Credits:</h4>
-        <ul>
+        <h4 style={{ marginBottom: '.5rem' }}>Credits:</h4>
+        <ul style={{ margin: 0, paddingLeft: '1rem' }}>
           <li>
             State JSON Data I was too lazy to type out:{' '}
             <a href="//gist.github.com/mshafrir/2646763#file-states_titlecase-json">
