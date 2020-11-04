@@ -56,7 +56,7 @@ export const stateData: Array<State> = [
     abbreviation: 'CO',
     type: Importance.NotSignificant,
     electoralVotes: 9,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
   {
     name: 'Connecticut',
