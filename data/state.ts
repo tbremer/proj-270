@@ -36,7 +36,7 @@ export const stateData: Array<State> = [
     abbreviation: 'AZ',
     type: Importance.BigSix,
     electoralVotes: 11,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
   {
     name: 'Arkansas',
@@ -163,7 +163,7 @@ export const stateData: Array<State> = [
     abbreviation: 'ME',
     type: Importance.BidenNeeds,
     electoralVotes: 4,
-    win: [[Party.Dem, 1, 'ME-01']],
+    win: [[Party.Dem, 4, 'State, ME-01']],
   },
   {
     name: 'Maryland',
