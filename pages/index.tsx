@@ -75,12 +75,11 @@ export default function Home({ data: states }: RunTimeProps) {
   const trump = states.filter((s) => s.type === Importance.TrumpNeeds);
   return (
     <>
-      <h1>
-        <span className="text-dem">2020 </span>
-        <span className="text-rep">Presidential </span>
-        <span className="text-dem">Election </span>
-        <span className="text-rep">Tracker </span>
+      <h1 style={{ marginTop: 0, marginBottom: 0 }}>
+        <span className="text-dem">Project </span>
+        <span className="text-rep">270</span>
       </h1>
+      <h4 style={{ fontWeight: 500, marginTop: 0 }}>2020 Presidential Election Tracker</h4>
       <hr style={{ marginBottom: '2rem' }} />
 
       <TheCount states={states} />
