@@ -163,7 +163,10 @@ export const stateData: Array<State> = [
     abbreviation: 'ME',
     type: Importance.BidenNeeds,
     electoralVotes: 4,
-    win: [[Party.Dem, 3, 'State, ME-01']],
+    win: [
+      [Party.Dem, 3, 'State, ME-01'],
+      [Party.Rep, 1, 'State, ME-02'],
+    ],
   },
   {
     name: 'Maryland',
@@ -406,7 +409,7 @@ export const stateData: Array<State> = [
     abbreviation: 'WI',
     type: Importance.BigSix,
     electoralVotes: 10,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
