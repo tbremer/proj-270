@@ -53,7 +53,7 @@ export default function TitledList({
               <ul style={{ paddingLeft: '1rem' }}>
                 {s.win.map((s, idx) => (
                   <li key={`${s[0]}-${s[1]}`}>
-                    {s[0] === Party.Dem ? 'Democrats' : 'Republicans'}: {s[1]}
+                    {s[0] === Party.Dem ? 'Democrats' : 'Republicans'}: {s[1]} ({s[2]})
                   </li>
                 ))}
               </ul>

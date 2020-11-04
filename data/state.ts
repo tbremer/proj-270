@@ -1,5 +1,5 @@
 import { Party } from 'data/party';
-type PartyTuple = [Party, number];
+type PartyTuple = [Party, number, string];
 export interface State {
   name: string;
   abbreviation: string;
@@ -162,7 +162,7 @@ export const stateData: Array<State> = [
     abbreviation: 'ME',
     type: Importance.BidenNeeds,
     electoralVotes: 4,
-    win: [[Party.Dem, 1]],
+    win: [[Party.Dem, 1, 'ME-01']],
   },
   {
     name: 'Maryland',
@@ -226,9 +226,8 @@ export const stateData: Array<State> = [
     type: Importance.NotSignificant,
     electoralVotes: 5,
     win: [
-      [Party.Rep, 2],
-      [Party.Rep, 1],
-      [Party.Dem, 1],
+      [Party.Rep, 4, 'State, NE-01, NE-03'],
+      [Party.Dem, 1, 'NE-02'],
     ],
   },
 
