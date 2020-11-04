@@ -84,7 +84,7 @@ export const stateData: Array<State> = [
     abbreviation: 'FL',
     type: Importance.BigSix,
     electoralVotes: 29,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
   {
     name: 'Georgia',
