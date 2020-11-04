@@ -41,7 +41,7 @@ export const stateData: Array<State> = [
     abbreviation: 'AR',
     type: Importance.NotSignificant,
     electoralVotes: 6,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
   {
     name: 'California',
