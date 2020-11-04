@@ -6,6 +6,7 @@ export interface State {
   type: Importance;
   electoralVotes: number;
   win: Party | Array<PartyTuple>;
+  split?: boolean;
 }
 
 export enum Importance {
@@ -229,6 +230,7 @@ export const stateData: Array<State> = [
       [Party.Rep, 4, 'State, NE-01, NE-03'],
       [Party.Dem, 1, 'NE-02'],
     ],
+    split: true,
   },
 
   {

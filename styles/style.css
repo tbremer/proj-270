@@ -55,6 +55,11 @@ a:visited {
     background-color: hsla(349, 87%, 66%, 50%);
 }
 
+.state-split {
+    border-color: #16161d;
+    background: linear-gradient(45deg, hsla(196, 67%, 48%, 50%) 0%, hsla(349, 87%, 66%, 50%) 100%);
+}
+
 .text-white {
     color: #f7fafc;
 }
