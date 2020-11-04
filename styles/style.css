@@ -47,14 +47,12 @@ a:visited {
 }
 
 .state-dem {
-    color: #f7fafc;
-    background-color: #28a0cb;
+    background-color: hsla(196, 67%, 48%, 50%);
     border-color: #33678e;
 }
 .state-rep {
-    color: #f7fafc;
     border-color: #8e333c;
-    background-color: #f45d79;
+    background-color: hsla(349, 87%, 66%, 50%);
 }
 
 .text-white {
