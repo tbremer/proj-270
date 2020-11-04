@@ -167,6 +167,7 @@ export const stateData: Array<State> = [
       [Party.Dem, 3, 'State, ME-01'],
       [Party.Rep, 1, 'State, ME-02'],
     ],
+    split: true,
   },
   {
     name: 'Maryland',
