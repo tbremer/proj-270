@@ -36,6 +36,16 @@ a:visited {
     color: #33678e;
 }
 
+.state {
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    background-color: #f7fafc;
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+    padding: 1rem;
+    width: 17rem;
+}
+
 .text-white {
     color: #f7fafc;
 }

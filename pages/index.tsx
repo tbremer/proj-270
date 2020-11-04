@@ -10,7 +10,22 @@ interface StaticProps {
   props: RunTimeProps;
 }
 
-function TheCount() {
+function TheCount({ states }: { states: Array<State> }) {
+  const [total, dem, rep] = states.reduce(
+    (acc, cur) => {
+      if (cur.win === Party.Neutral) return acc;
+
+      const [total, dem, rep] = acc;
+
+      return [
+        total + cur.electoralVotes,
+        cur.win === Party.Dem ? dem + cur.electoralVotes : dem,
+        cur.win === Party.Rep ? rep + cur.electoralVotes : rep,
+      ];
+    },
+    [0, 0, 0]
+  );
+
   return (
     <section style={{ marginBottom: '2rem' }}>
       <h2>The Race</h2>
@@ -25,7 +40,7 @@ function TheCount() {
           className="text-white bg-dem"
           style={{
             padding: '1rem',
-            flex: 1,
+            flex: (dem / total) * 10,
             borderRadius: '.25rem',
             borderTopRightRadius: 0,
             borderBottomRightRadius: 0,
@@ -33,20 +48,20 @@ function TheCount() {
           }}
         >
           <p style={{ margin: 0, fontWeight: 600 }}>Biden</p>
-          <p style={{ margin: 0, marginTop: '.125rem', fontSize: '.85rem' }}>0 electoral votes</p>
+          <p style={{ margin: 0, marginTop: '.125rem', fontSize: '.85rem' }}>{dem} electoral votes</p>
         </div>
         <div
           className="text-white bg-rep"
           style={{
             padding: '1rem',
-            flex: 1,
+            flex: (rep / total) * 10,
             borderRadius: '.25rem',
             borderTopLeftRadius: 0,
             borderBottomLeftRadius: 0,
           }}
         >
           <p style={{ margin: 0, fontWeight: 600 }}>Trump</p>
-          <p style={{ margin: 0, marginTop: '.125rem', fontSize: '.85rem' }}>0 electoral votes</p>
+          <p style={{ margin: 0, marginTop: '.125rem', fontSize: '.85rem' }}>{rep} electoral votes</p>
         </div>
       </div>
     </section>
@@ -68,7 +83,7 @@ export default function Home({ data: states }: RunTimeProps) {
       </h1>
       <hr style={{ marginBottom: '2rem' }} />
 
-      <TheCount />
+      <TheCount states={states} />
 
       <StateList title="Big six to watch" states={bigsix} />
       <StateList title="Biden needs to win" states={biden} />
