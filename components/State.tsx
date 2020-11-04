@@ -27,7 +27,7 @@ export default function TitledList({
         {states.map((s, idx) => (
           <li
             key={s.abbreviation}
-            className={`state ${s.win === Party.Neutral ? '' : s.win === Party.Dem ? 'bg-dem' : 'bg-rep'}`}
+            className={`state ${s.win === Party.Neutral ? '' : s.win === Party.Dem ? 'state-dem' : 'state-rep'}`}
           >
             <p style={{ fontWeight: 'bold', margin: 0, marginBottom: '.25rem' }}>
               {s.name} <span style={{ fontSize: '.85rem', textTransform: 'uppercase' }}>({s.abbreviation})</span>

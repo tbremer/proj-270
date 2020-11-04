@@ -37,13 +37,24 @@ a:visited {
 }
 
 .state {
-    border: 1px solid #ccc;
+    border: 0.125rem solid #ccc;
     border-radius: 0.25rem;
     background-color: #f7fafc;
     margin-right: 0.75rem;
     margin-bottom: 0.75rem;
     padding: 1rem;
     width: 17rem;
+}
+
+.state-dem {
+    color: #f7fafc;
+    background-color: #28a0cb;
+    border-color: #33678e;
+}
+.state-rep {
+    color: #f7fafc;
+    border-color: #8e333c;
+    background-color: #f45d79;
 }
 
 .text-white {
