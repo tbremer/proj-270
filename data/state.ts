@@ -193,7 +193,7 @@ export const stateData: Array<State> = [
     abbreviation: 'MN',
     type: Importance.BidenNeeds,
     electoralVotes: 10,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
