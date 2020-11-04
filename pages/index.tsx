@@ -1,6 +1,7 @@
 import { stateData, Importance, State } from 'data/state';
 import { Party } from 'data/party';
 import StateList from 'components/State';
+import { useState } from 'react';
 
 interface RunTimeProps {
   data: Array<State>;
@@ -85,10 +86,21 @@ function TheCount({ states }: { states: Array<State> }) {
 }
 
 export default function Home({ data: states }: RunTimeProps) {
-  const bigsix = states.filter((s) => s.type === Importance.BigSix);
-  const rest = states.filter((s) => s.type === Importance.NotSignificant);
-  const biden = states.filter((s) => s.type === Importance.BidenNeeds);
-  const trump = states.filter((s) => s.type === Importance.TrumpNeeds);
+  const [stateData, setStateData] = useState(states);
+  function updateState(abbreviation, newData) {
+    const newStates = stateData.map((state) => {
+      if (state.abbreviation === abbreviation) {
+        return Object.assign({}, state, newData);
+      }
+      return state;
+    });
+
+    setStateData(newStates);
+  }
+  const bigsix = stateData.filter((s) => s.type === Importance.BigSix);
+  const rest = stateData.filter((s) => s.type === Importance.NotSignificant);
+  const biden = stateData.filter((s) => s.type === Importance.BidenNeeds);
+  const trump = stateData.filter((s) => s.type === Importance.TrumpNeeds);
   return (
     <>
       <h1 style={{ marginTop: 0, marginBottom: 0 }}>
@@ -98,12 +110,12 @@ export default function Home({ data: states }: RunTimeProps) {
       <h4 style={{ fontWeight: 500, marginTop: 0 }}>2020 Presidential Election Tracker</h4>
       <hr style={{ marginBottom: '2rem' }} />
 
-      <TheCount states={states} />
+      <TheCount states={stateData} />
 
-      <StateList title="Big six to watch" states={bigsix} />
-      <StateList title="Biden needs to win" states={biden} />
-      <StateList title="Trump needs to win" states={trump} />
-      <StateList title="Remaining states" states={rest} />
+      <StateList title="Big six to watch" states={bigsix} updaterFunction={updateState} />
+      <StateList title="Biden needs to win" states={biden} updaterFunction={updateState} />
+      <StateList title="Trump needs to win" states={trump} updaterFunction={updateState} />
+      <StateList title="Remaining states" states={rest} updaterFunction={updateState} />
 
       <hr />
       <footer>

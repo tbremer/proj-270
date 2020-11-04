@@ -4,10 +4,12 @@ import { Party } from 'data/party';
 export default function TitledList({
   title,
   states,
+  updaterFunction,
   party = Party.Neutral,
 }: {
   title: String;
   states: Array<State>;
+  updaterFunction: (stateAbbreviation: string, newData: Partial<State>) => void;
   party?: Party;
 }) {
   return (
@@ -30,6 +32,18 @@ export default function TitledList({
             className={`state ${
               s.win === Party.Neutral || Array.isArray(s.win) ? '' : s.win === Party.Dem ? 'state-dem' : 'state-rep'
             }`}
+            onClick={() =>
+              updaterFunction(s.abbreviation, {
+                win:
+                  s.win === Party.Dem
+                    ? Party.Neutral
+                    : s.win === Party.Neutral
+                    ? Party.Rep
+                    : s.win === Party.Rep
+                    ? Party.Dem
+                    : Party.Neutral,
+              })
+            }
           >
             <p style={{ fontWeight: 'bold', margin: 0, marginBottom: '.25rem' }}>
               {s.name} <span style={{ fontSize: '.85rem', textTransform: 'uppercase' }}>({s.abbreviation})</span>
