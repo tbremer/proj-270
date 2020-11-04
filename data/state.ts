@@ -228,6 +228,7 @@ export const stateData: Array<State> = [
     win: [
       [Party.Rep, 2],
       [Party.Rep, 1],
+      [Party.Dem, 1],
     ],
   },
 
