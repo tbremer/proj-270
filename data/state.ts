@@ -130,7 +130,7 @@ export const stateData: Array<State> = [
     abbreviation: 'IA',
     type: Importance.TrumpNeeds,
     electoralVotes: 6,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -217,7 +217,7 @@ export const stateData: Array<State> = [
     abbreviation: 'MT',
     type: Importance.NotSignificant,
     electoralVotes: 3,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
