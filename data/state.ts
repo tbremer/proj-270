@@ -49,7 +49,7 @@ export const stateData: Array<State> = [
     abbreviation: 'CA',
     type: Importance.NotSignificant,
     electoralVotes: 55,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
   {
     name: 'Colorado',
@@ -106,7 +106,7 @@ export const stateData: Array<State> = [
     abbreviation: 'ID',
     type: Importance.NotSignificant,
     electoralVotes: 4,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -308,7 +308,7 @@ export const stateData: Array<State> = [
     abbreviation: 'OR',
     type: Importance.NotSignificant,
     electoralVotes: 7,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
@@ -388,7 +388,7 @@ export const stateData: Array<State> = [
     abbreviation: 'WA',
     type: Importance.NotSignificant,
     electoralVotes: 12,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
