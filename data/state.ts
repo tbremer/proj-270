@@ -1,10 +1,11 @@
 import { Party } from 'data/party';
+type PartyTuple = [Party, number];
 export interface State {
   name: string;
   abbreviation: string;
   type: Importance;
   electoralVotes: number;
-  win: Party;
+  win: Party | Array<PartyTuple>;
 }
 
 export enum Importance {
@@ -153,7 +154,7 @@ export const stateData: Array<State> = [
     abbreviation: 'LA',
     type: Importance.NotSignificant,
     electoralVotes: 8,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -224,7 +225,10 @@ export const stateData: Array<State> = [
     abbreviation: 'NE',
     type: Importance.NotSignificant,
     electoralVotes: 5,
-    win: Party.Neutral,
+    win: [
+      [Party.Rep, 2],
+      [Party.Rep, 1],
+    ],
   },
 
   {
@@ -256,7 +260,7 @@ export const stateData: Array<State> = [
     abbreviation: 'NM',
     type: Importance.NotSignificant,
     electoralVotes: 5,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
@@ -264,7 +268,7 @@ export const stateData: Array<State> = [
     abbreviation: 'NY',
     type: Importance.NotSignificant,
     electoralVotes: 29,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
@@ -280,7 +284,7 @@ export const stateData: Array<State> = [
     abbreviation: 'ND',
     type: Importance.NotSignificant,
     electoralVotes: 3,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -336,7 +340,7 @@ export const stateData: Array<State> = [
     abbreviation: 'SD',
     type: Importance.NotSignificant,
     electoralVotes: 3,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -408,6 +412,6 @@ export const stateData: Array<State> = [
     abbreviation: 'WY',
     type: Importance.NotSignificant,
     electoralVotes: 3,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 ];

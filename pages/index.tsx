@@ -17,11 +17,27 @@ function TheCount({ states }: { states: Array<State> }) {
 
       const [total, dem, rep] = acc;
 
-      return [
-        total + cur.electoralVotes,
-        cur.win === Party.Dem ? dem + cur.electoralVotes : dem,
-        cur.win === Party.Rep ? rep + cur.electoralVotes : rep,
-      ];
+      if (Array.isArray(cur.win)) {
+        const [totalNested, demNested, repNested] = cur.win.reduce(
+          (acc, [party, count]) => {
+            const [innerTotal, innerDem, innerRep] = acc;
+            return [
+              innerTotal + count,
+              party === Party.Dem ? innerDem + count : innerDem,
+              party === Party.Rep ? innerRep + count : innerRep,
+            ];
+          },
+          [0, 0, 0]
+        );
+
+        return [total + totalNested, dem + demNested, rep + repNested];
+      } else {
+        return [
+          total + cur.electoralVotes,
+          cur.win === Party.Dem ? dem + cur.electoralVotes : dem,
+          cur.win === Party.Rep ? rep + cur.electoralVotes : rep,
+        ];
+      }
     },
     [0, 0, 0]
   );
