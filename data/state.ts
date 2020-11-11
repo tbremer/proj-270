@@ -29,7 +29,7 @@ export const stateData: Array<State> = [
     abbreviation: 'AK',
     type: Importance.NotSignificant,
     electoralVotes: 3,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
   {
     name: 'Arizona',
@@ -190,7 +190,7 @@ export const stateData: Array<State> = [
     abbreviation: 'MI',
     type: Importance.BigSix,
     electoralVotes: 16,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
@@ -242,7 +242,7 @@ export const stateData: Array<State> = [
     abbreviation: 'NV',
     type: Importance.BidenNeeds,
     electoralVotes: 6,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
@@ -322,7 +322,7 @@ export const stateData: Array<State> = [
     abbreviation: 'PA',
     type: Importance.BigSix,
     electoralVotes: 20,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
