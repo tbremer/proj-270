@@ -282,7 +282,7 @@ export const stateData: Array<State> = [
     abbreviation: 'NC',
     type: Importance.BigSix,
     electoralVotes: 15,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
