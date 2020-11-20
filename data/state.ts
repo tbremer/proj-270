@@ -92,7 +92,7 @@ export const stateData: Array<State> = [
     abbreviation: 'GA',
     type: Importance.TrumpNeeds,
     electoralVotes: 16,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
   {
     name: 'Hawaii',
