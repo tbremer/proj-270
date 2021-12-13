@@ -64,7 +64,7 @@ function TheCount({ states }: { states: Array<State> }) {
             textAlign: 'right',
           }}
         >
-          <p style={{ margin: 0, fontWeight: 600 }}>Biden</p>
+          <p style={{ margin: 0, fontWeight: 600 }}>Democrat</p>
           <p style={{ margin: 0, marginTop: '.125rem', fontSize: '.85rem' }}>{dem} electoral votes</p>
         </div>
         <div
@@ -77,7 +77,7 @@ function TheCount({ states }: { states: Array<State> }) {
             borderBottomLeftRadius: 0,
           }}
         >
-          <p style={{ margin: 0, fontWeight: 600 }}>Trump</p>
+          <p style={{ margin: 0, fontWeight: 600 }}>Republican</p>
           <p style={{ margin: 0, marginTop: '.125rem', fontSize: '.85rem' }}>{rep} electoral votes</p>
         </div>
       </div>
@@ -99,8 +99,8 @@ export default function Home({ data: states }: RunTimeProps) {
   }
   const bigsix = stateData.filter((s) => s.type === Importance.BigSix);
   const rest = stateData.filter((s) => s.type === Importance.NotSignificant);
-  const biden = stateData.filter((s) => s.type === Importance.BidenNeeds);
-  const trump = stateData.filter((s) => s.type === Importance.TrumpNeeds);
+  const democrat = stateData.filter((s) => s.type === Importance.DemocratNeeds);
+  const republican = stateData.filter((s) => s.type === Importance.RepublicanNeeds);
   return (
     <>
       <h1 style={{ marginTop: 0, marginBottom: 0 }}>
@@ -113,8 +113,8 @@ export default function Home({ data: states }: RunTimeProps) {
       <TheCount states={stateData} />
 
       <StateList title="Big six to watch" states={bigsix} updaterFunction={updateState} />
-      <StateList title="Biden needs to win" states={biden} updaterFunction={updateState} />
-      <StateList title="Trump needs to win" states={trump} updaterFunction={updateState} />
+      <StateList title="Democrat needs to win" states={democrat} updaterFunction={updateState} />
+      <StateList title="Republican needs to win" states={republican} updaterFunction={updateState} />
       <StateList title="Remaining states" states={rest} updaterFunction={updateState} />
 
       <hr />
@@ -129,8 +129,8 @@ export default function Home({ data: states }: RunTimeProps) {
           </li>
           <li>
             High level race data:{' '}
-            <a href="//www.vox.com/21428915/electoral-college-trump-biden-2020">
-              Vox: How Biden — or Trump — could win 270 electoral votes
+            <a href="//www.vox.com/21428915/electoral-college-Republican-Democrat-2020">
+              Vox: How Democrat — or Republican — could win 270 electoral votes
             </a>
           </li>
           <li>

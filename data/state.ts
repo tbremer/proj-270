@@ -1,5 +1,7 @@
 import { Party } from 'data/party';
+
 type PartyTuple = [Party, number, string];
+
 export interface State {
   name: string;
   abbreviation: string;
@@ -12,8 +14,8 @@ export interface State {
 export enum Importance {
   BigSix,
   NotSignificant,
-  TrumpNeeds,
-  BidenNeeds,
+  RepublicanNeeds,
+  DemocratNeeds,
 }
 
 export const stateData: Array<State> = [
@@ -90,7 +92,7 @@ export const stateData: Array<State> = [
   {
     name: 'Georgia',
     abbreviation: 'GA',
-    type: Importance.TrumpNeeds,
+    type: Importance.RepublicanNeeds,
     electoralVotes: 16,
     win: Party.Dem,
   },
@@ -129,7 +131,7 @@ export const stateData: Array<State> = [
   {
     name: 'Iowa',
     abbreviation: 'IA',
-    type: Importance.TrumpNeeds,
+    type: Importance.RepublicanNeeds,
     electoralVotes: 6,
     win: Party.Rep,
   },
@@ -161,7 +163,7 @@ export const stateData: Array<State> = [
   {
     name: 'Maine',
     abbreviation: 'ME',
-    type: Importance.BidenNeeds,
+    type: Importance.DemocratNeeds,
     electoralVotes: 4,
     win: [
       [Party.Dem, 3, 'State, ME-01'],
@@ -196,7 +198,7 @@ export const stateData: Array<State> = [
   {
     name: 'Minnesota',
     abbreviation: 'MN',
-    type: Importance.BidenNeeds,
+    type: Importance.DemocratNeeds,
     electoralVotes: 10,
     win: Party.Dem,
   },
@@ -240,7 +242,7 @@ export const stateData: Array<State> = [
   {
     name: 'Nevada',
     abbreviation: 'NV',
-    type: Importance.BidenNeeds,
+    type: Importance.DemocratNeeds,
     electoralVotes: 6,
     win: Party.Dem,
   },
@@ -248,7 +250,7 @@ export const stateData: Array<State> = [
   {
     name: 'New Hampshire',
     abbreviation: 'NH',
-    type: Importance.BidenNeeds,
+    type: Importance.DemocratNeeds,
     electoralVotes: 4,
     win: Party.Dem,
   },
@@ -296,7 +298,7 @@ export const stateData: Array<State> = [
   {
     name: 'Ohio',
     abbreviation: 'OH',
-    type: Importance.TrumpNeeds,
+    type: Importance.RepublicanNeeds,
     electoralVotes: 18,
     win: Party.Rep,
   },
@@ -360,7 +362,7 @@ export const stateData: Array<State> = [
   {
     name: 'Texas',
     abbreviation: 'TX',
-    type: Importance.TrumpNeeds,
+    type: Importance.RepublicanNeeds,
     electoralVotes: 38,
     win: Party.Rep,
   },
