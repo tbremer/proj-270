@@ -61,14 +61,16 @@ export default function TitledList({
 						}
 					>
 						<p
-							style={{ fontWeight: "bold", margin: 0, marginBottom: ".25rem" }}
+							style={{ fontWeight: "bold", margin: 0, marginBottom: ".125rem" }}
 						>
 							{s.name}{" "}
 							<span style={{ fontSize: ".85rem", textTransform: "uppercase" }}>
 								({s.abbreviation})
 							</span>
 						</p>
-						<p style={{ margin: 0, marginBottom: ".25rem" }}>
+						<p
+							style={{ margin: 0, marginBottom: ".25rem", fontSize: ".85rem" }}
+						>
 							Eligible Electoral Votes: {s.electoralVotes}
 						</p>
 						{Array.isArray(s.win) && (
