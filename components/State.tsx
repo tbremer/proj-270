@@ -2,8 +2,8 @@ import { State, stateData } from 'data/state';
 import { Party } from 'data/party';
 
 function stateClassName(state: State) {
-  if (state.split === true) return 'state-split';
-  if (state.win === Party.Neutral || Array.isArray(state.win)) return '';
+  if (state.split === true && Array.isArray(state.win)) return 'state-split';
+  if (state.win === Party.Neutral) return '';
 
   return state.win === Party.Dem ? 'state-dem' : 'state-rep';
 }
