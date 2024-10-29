@@ -38,6 +38,7 @@ export default function TitledList({
 					display: "flex",
 					flexDirection: "row",
 					flexWrap: "wrap",
+					gap: ".75rem",
 					listStyleType: "none",
 					padding: 0,
 				}}
