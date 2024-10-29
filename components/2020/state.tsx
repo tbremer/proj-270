@@ -1,4 +1,4 @@
-import type { State } from "data/state";
+import type { State } from "data/2020/state";
 import { Party } from "data/party";
 
 function stateClassName(state: State) {

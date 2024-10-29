@@ -2,6 +2,13 @@ import { Party } from 'data/party';
 
 type PartyTuple = [Party, number, string];
 
+export enum Importance {
+  BigSix,
+  NotSignificant,
+  RepublicanNeeds,
+  DemocratNeeds,
+}
+
 export interface State {
   name: string;
   abbreviation: string;
@@ -9,13 +16,6 @@ export interface State {
   electoralVotes: number;
   win: Party | Array<PartyTuple>;
   split?: boolean;
-}
-
-export enum Importance {
-  BigSix,
-  NotSignificant,
-  RepublicanNeeds,
-  DemocratNeeds,
 }
 
 export const stateData: Array<State> = [
