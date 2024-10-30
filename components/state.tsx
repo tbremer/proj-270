@@ -1,5 +1,5 @@
-import type { State } from "data/state";
 import { Party } from "data/party";
+import type { State } from "data/state";
 
 function stateClassName(state: State) {
   if (state.split === true && Array.isArray(state.win)) return "state-split";

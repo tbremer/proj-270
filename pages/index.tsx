@@ -1,6 +1,6 @@
-import { stateData, Importance, type State } from "data/state";
-import { Party } from "data/party";
 import StateList from "components/state";
+import { Party } from "data/party";
+import { Importance, type State, stateData } from "data/state";
 import { useState } from "react";
 
 interface RunTimeProps {

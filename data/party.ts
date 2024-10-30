@@ -1,5 +1,5 @@
 export enum Party {
-  Neutral,
-  Dem,
-  Rep,
+  Neutral = 0,
+  Dem = 1,
+  Rep = 2,
 }

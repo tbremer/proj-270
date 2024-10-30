@@ -3,10 +3,10 @@ import { Party } from "data/party";
 type PartyTuple = [Party, number, string];
 
 export enum Importance {
-  BigSix,
-  NotSignificant,
-  RepublicanNeeds,
-  DemocratNeeds,
+  BigSix = 0,
+  NotSignificant = 1,
+  RepublicanNeeds = 2,
+  DemocratNeeds = 3,
 }
 
 export interface State {

@@ -12,8 +12,8 @@ export interface State {
 }
 
 export enum Importance {
-  ToWatch,
-  NotSignificant,
+  ToWatch = 0,
+  NotSignificant = 1,
 }
 
 // Michigan, Wisconsin, Georgia, North Carolina, Arizona and Nevad
