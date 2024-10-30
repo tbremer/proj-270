@@ -1,76 +1,81 @@
 :root {
-    font-size: 112%;
-    line-height: 1.4;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans',
-        sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-    color: #16161d;
+  font-size: 112%;
+  line-height: 1.4;
+  font-family:
+    system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #16161d;
 }
 
 html,
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color: #edeff0;
-    padding: 1rem;
+  background-color: #edeff0;
+  padding: 1rem;
 }
 
 a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #33678e;
+  text-decoration: none;
+  font-weight: 500;
+  color: #33678e;
 }
 
 a:hover {
-    text-decoration: underline;
-    color: #2d4262;
+  text-decoration: underline;
+  color: #2d4262;
 }
 
 a:active {
-    color: #28a0cb;
+  color: #28a0cb;
 }
 
 a:visited {
-    color: #33678e;
+  color: #33678e;
 }
 
 .state {
-    border: 0.0625rem solid #ccc;
-    border-radius: 0.25rem;
-    background-color: #f7fafc;
-    padding: 0.75rem 1rem ;
-    width: 15rem;
+  border: 0.0625rem solid #ccc;
+  border-radius: 0.25rem;
+  background-color: #f7fafc;
+  padding: 0.75rem 1rem;
+  width: 15rem;
 }
 
 .state-dem {
-    background-color: hsla(196, 67%, 48%, 50%);
-    border-color: #33678e;
+  background-color: hsla(196, 67%, 48%, 50%);
+  border-color: #33678e;
 }
 .state-rep {
-    border-color: #8e333c;
-    background-color: hsla(349, 87%, 66%, 50%);
+  border-color: #8e333c;
+  background-color: hsla(349, 87%, 66%, 50%);
 }
 
 .state-split {
-    border-color: #16161d;
-    background: linear-gradient(45deg, hsla(196, 67%, 48%, 50%) 0%, hsla(349, 87%, 66%, 50%) 100%);
+  border-color: #16161d;
+  background: linear-gradient(
+    45deg,
+    hsla(196, 67%, 48%, 50%) 0%,
+    hsla(349, 87%, 66%, 50%) 100%
+  );
 }
 
 .text-white {
-    color: #f7fafc;
+  color: #f7fafc;
 }
 
 .text-dem {
-    color: #28a0cb;
+  color: #28a0cb;
 }
 .text-rep {
-    color: #f45d79;
+  color: #f45d79;
 }
 .bg-dem {
-    background-color: #28a0cb;
+  background-color: #28a0cb;
 }
 .bg-rep {
-    background-color: #f45d79;
+  background-color: #f45d79;
 }
