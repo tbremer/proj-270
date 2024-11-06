@@ -92,7 +92,7 @@ export const stateData: Array<State> = [
     abbreviation: "GA",
     type: Importance.ToWatch,
     electoralVotes: 16,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
   {
     name: "Hawaii",
@@ -228,7 +228,7 @@ export const stateData: Array<State> = [
     type: Importance.NotSignificant,
     electoralVotes: 5,
     win: [
-      [Party.Rep, 3, "Statewide vote, NE-3"],
+      [Party.Rep, 4, "Statewide vote, NE-3, NE-1"],
       [Party.Dem, 1, "NE-2"],
     ],
     split: true,
