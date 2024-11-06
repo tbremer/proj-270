@@ -164,8 +164,8 @@ export const stateData: Array<State> = [
     type: Importance.NotSignificant,
     electoralVotes: 4,
     win: [
-      [Party.Dem, 1],
-      [Party.Rep, 1],
+      [Party.Dem, 1, "ME-1"],
+      [Party.Rep, 1, "ME-2"],
     ],
     split: true,
   },
@@ -231,7 +231,7 @@ export const stateData: Array<State> = [
     type: Importance.NotSignificant,
     electoralVotes: 5,
     win: [
-      [Party.Rep, 4, "Statewide vote, NE-3, NE-1"],
+      [Party.Rep, 4, "State, NE-3, NE-1"],
       [Party.Dem, 1, "NE-2"],
     ],
     split: true,
