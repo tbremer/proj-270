@@ -280,7 +280,7 @@ export const stateData: Array<State> = [
     abbreviation: "NC",
     type: Importance.ToWatch,
     electoralVotes: 16,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
