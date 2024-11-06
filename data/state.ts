@@ -382,7 +382,7 @@ export const stateData: Array<State> = [
     abbreviation: "VA",
     type: Importance.NotSignificant,
     electoralVotes: 13,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
