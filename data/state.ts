@@ -310,7 +310,7 @@ export const stateData: Array<State> = [
     abbreviation: "OR",
     type: Importance.NotSignificant,
     electoralVotes: 8,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
