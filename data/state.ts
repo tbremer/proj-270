@@ -99,7 +99,7 @@ export const stateData: Array<State> = [
     abbreviation: "HI",
     type: Importance.NotSignificant,
     electoralVotes: 4,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
