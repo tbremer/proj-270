@@ -16,8 +16,6 @@ export enum Importance {
   NotSignificant = 1,
 }
 
-// Michigan, Wisconsin, Georgia, North Carolina, Arizona and Nevad
-
 export const stateData: Array<State> = [
   {
     name: "Alabama",
