@@ -24,7 +24,7 @@ export const stateData: Array<State> = [
     abbreviation: "AL",
     type: Importance.NotSignificant,
     electoralVotes: 9,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
   {
     name: "Alaska",
@@ -45,7 +45,7 @@ export const stateData: Array<State> = [
     abbreviation: "AR",
     type: Importance.NotSignificant,
     electoralVotes: 6,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
   {
     name: "California",
@@ -66,14 +66,14 @@ export const stateData: Array<State> = [
     abbreviation: "CT",
     type: Importance.NotSignificant,
     electoralVotes: 7,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
   {
     name: "Delaware",
     abbreviation: "DE",
     type: Importance.NotSignificant,
     electoralVotes: 3,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
   {
     name: "District Of Columbia",
@@ -87,7 +87,7 @@ export const stateData: Array<State> = [
     abbreviation: "FL",
     type: Importance.NotSignificant,
     electoralVotes: 30,
-    win: Party.Neutral,
+  win: Party.Rep,
   },
   {
     name: "Georgia",
@@ -117,7 +117,7 @@ export const stateData: Array<State> = [
     abbreviation: "IL",
     type: Importance.NotSignificant,
     electoralVotes: 19,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
@@ -125,7 +125,7 @@ export const stateData: Array<State> = [
     abbreviation: "IN",
     type: Importance.NotSignificant,
     electoralVotes: 11,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -149,7 +149,7 @@ export const stateData: Array<State> = [
     abbreviation: "KY",
     type: Importance.NotSignificant,
     electoralVotes: 8,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -157,7 +157,7 @@ export const stateData: Array<State> = [
     abbreviation: "LA",
     type: Importance.NotSignificant,
     electoralVotes: 8,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -173,7 +173,7 @@ export const stateData: Array<State> = [
     abbreviation: "MD",
     type: Importance.NotSignificant,
     electoralVotes: 10,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
@@ -181,7 +181,7 @@ export const stateData: Array<State> = [
     abbreviation: "MA",
     type: Importance.NotSignificant,
     electoralVotes: 11,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
@@ -205,7 +205,7 @@ export const stateData: Array<State> = [
     abbreviation: "MS",
     type: Importance.NotSignificant,
     electoralVotes: 6,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -213,7 +213,7 @@ export const stateData: Array<State> = [
     abbreviation: "MO",
     type: Importance.NotSignificant,
     electoralVotes: 10,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -229,7 +229,9 @@ export const stateData: Array<State> = [
     abbreviation: "NE",
     type: Importance.NotSignificant,
     electoralVotes: 5,
-    win: Party.Neutral,
+    win: [
+      [Party.Rep, 3, ""],
+    ],
     split: true,
   },
 
@@ -254,7 +256,7 @@ export const stateData: Array<State> = [
     abbreviation: "NJ",
     type: Importance.NotSignificant,
     electoralVotes: 14,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
@@ -270,7 +272,7 @@ export const stateData: Array<State> = [
     abbreviation: "NY",
     type: Importance.NotSignificant,
     electoralVotes: 28,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
@@ -286,7 +288,7 @@ export const stateData: Array<State> = [
     abbreviation: "ND",
     type: Importance.NotSignificant,
     electoralVotes: 3,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -294,7 +296,7 @@ export const stateData: Array<State> = [
     abbreviation: "OH",
     type: Importance.NotSignificant,
     electoralVotes: 17,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -302,7 +304,7 @@ export const stateData: Array<State> = [
     abbreviation: "OK",
     type: Importance.NotSignificant,
     electoralVotes: 7,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -326,7 +328,7 @@ export const stateData: Array<State> = [
     abbreviation: "RI",
     type: Importance.NotSignificant,
     electoralVotes: 4,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
@@ -334,7 +336,7 @@ export const stateData: Array<State> = [
     abbreviation: "SC",
     type: Importance.NotSignificant,
     electoralVotes: 9,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -342,7 +344,7 @@ export const stateData: Array<State> = [
     abbreviation: "SD",
     type: Importance.NotSignificant,
     electoralVotes: 3,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -350,7 +352,7 @@ export const stateData: Array<State> = [
     abbreviation: "TN",
     type: Importance.NotSignificant,
     electoralVotes: 11,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -358,7 +360,7 @@ export const stateData: Array<State> = [
     abbreviation: "TX",
     type: Importance.NotSignificant,
     electoralVotes: 40,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -374,7 +376,7 @@ export const stateData: Array<State> = [
     abbreviation: "VT",
     type: Importance.NotSignificant,
     electoralVotes: 3,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
@@ -398,7 +400,7 @@ export const stateData: Array<State> = [
     abbreviation: "WV",
     type: Importance.NotSignificant,
     electoralVotes: 4,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -414,6 +416,6 @@ export const stateData: Array<State> = [
     abbreviation: "WY",
     type: Importance.NotSignificant,
     electoralVotes: 3,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 ];
