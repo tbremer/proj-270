@@ -8,7 +8,7 @@ function stateClassName(state: State) {
   return state.win === Party.Dem ? "state-dem" : "state-rep";
 }
 
-export default function TitledList({
+export default function StateList({
   title,
   states,
   updaterFunction,
@@ -77,8 +77,11 @@ export default function TitledList({
               <ul style={{ paddingLeft: "1rem" }}>
                 {s.win.map((s, idx) => (
                   <li key={`${s[0]}-${s[1]}`}>
-                    {s[0] === Party.Dem ? "Democrats" : "Republicans"}: {s[1]} (
-                    {s[2]})
+                    {s[0] === Party.Dem ? "Democrats" : "Republicans"}: {s[1]}{" "}
+                    {s[2]?.length
+                      ? `(
+                    ${s[2]})`
+                      : ""}
                   </li>
                 ))}
               </ul>
