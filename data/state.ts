@@ -163,7 +163,10 @@ export const stateData: Array<State> = [
     abbreviation: "ME",
     type: Importance.NotSignificant,
     electoralVotes: 4,
-    win: [[Party.Dem, 1]],
+    win: [
+      [Party.Dem, 1],
+      [Party.Rep, 1],
+    ],
     split: true,
   },
   {
