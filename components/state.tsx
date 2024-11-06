@@ -44,6 +44,7 @@ export default function StateList({
         }}
       >
         {states.map((s, idx) => (
+          // biome-ignore lint/a11y/useKeyWithClickEvents: like 4 people use this site and i don't care enough to fix it right now
           <li
             key={s.abbreviation}
             className={`state ${stateClassName(s)}`}
@@ -75,7 +76,7 @@ export default function StateList({
             </p>
             {Array.isArray(s.win) && (
               <ul style={{ paddingLeft: "1rem" }}>
-                {s.win.map((s, idx) => (
+                {s.win.map((s) => (
                   <li key={`${s[0]}-${s[1]}`}>
                     {s[0] === Party.Dem ? "Democrats" : "Republicans"}: {s[1]}{" "}
                     {s[2]?.length

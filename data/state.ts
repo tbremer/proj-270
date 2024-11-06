@@ -1,6 +1,6 @@
 import { Party } from "data/party";
 
-type PartyTuple = [Party, number, string];
+type PartyTuple = [Party, number] | [Party, number, string];
 
 export interface State {
   name: string;
@@ -85,7 +85,7 @@ export const stateData: Array<State> = [
     abbreviation: "FL",
     type: Importance.NotSignificant,
     electoralVotes: 30,
-  win: Party.Rep,
+    win: Party.Rep,
   },
   {
     name: "Georgia",
@@ -163,7 +163,7 @@ export const stateData: Array<State> = [
     abbreviation: "ME",
     type: Importance.NotSignificant,
     electoralVotes: 4,
-    win: Party.Neutral,
+    win: [[Party.Dem, 1]],
     split: true,
   },
   {
@@ -227,9 +227,7 @@ export const stateData: Array<State> = [
     abbreviation: "NE",
     type: Importance.NotSignificant,
     electoralVotes: 5,
-    win: [
-      [Party.Rep, 3, ""],
-    ],
+    win: [[Party.Rep, 3, ""]],
     split: true,
   },
 
