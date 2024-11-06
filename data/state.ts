@@ -133,7 +133,7 @@ export const stateData: Array<State> = [
     abbreviation: "IA",
     type: Importance.NotSignificant,
     electoralVotes: 6,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -141,7 +141,7 @@ export const stateData: Array<State> = [
     abbreviation: "KS",
     type: Importance.NotSignificant,
     electoralVotes: 6,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
