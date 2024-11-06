@@ -221,7 +221,7 @@ export const stateData: Array<State> = [
     abbreviation: "MT",
     type: Importance.NotSignificant,
     electoralVotes: 4,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -368,7 +368,7 @@ export const stateData: Array<State> = [
     abbreviation: "UT",
     type: Importance.NotSignificant,
     electoralVotes: 6,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
