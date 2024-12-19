@@ -29,14 +29,14 @@ export const stateData: Array<State> = [
     abbreviation: "AK",
     type: Importance.NotSignificant,
     electoralVotes: 3,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
   {
     name: "Arizona",
     abbreviation: "AZ",
     type: Importance.ToWatch,
     electoralVotes: 11,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
   {
     name: "Arkansas",
@@ -190,7 +190,7 @@ export const stateData: Array<State> = [
     abbreviation: "MI",
     type: Importance.ToWatch,
     electoralVotes: 15,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -198,7 +198,7 @@ export const stateData: Array<State> = [
     abbreviation: "MN",
     type: Importance.NotSignificant,
     electoralVotes: 10,
-    win: Party.Neutral,
+    win: Party.Dem,
   },
 
   {
@@ -242,7 +242,7 @@ export const stateData: Array<State> = [
     abbreviation: "NV",
     type: Importance.ToWatch,
     electoralVotes: 6,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -322,7 +322,7 @@ export const stateData: Array<State> = [
     abbreviation: "PA",
     type: Importance.ToWatch,
     electoralVotes: 19,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
@@ -410,7 +410,7 @@ export const stateData: Array<State> = [
     abbreviation: "WI",
     type: Importance.ToWatch,
     electoralVotes: 10,
-    win: Party.Neutral,
+    win: Party.Rep,
   },
 
   {
