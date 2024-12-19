@@ -163,11 +163,8 @@ export const stateData: Array<State> = [
     abbreviation: "ME",
     type: Importance.NotSignificant,
     electoralVotes: 4,
-    win: [
-      [Party.Dem, 1, "ME-1"],
-      [Party.Rep, 1, "ME-2"],
-    ],
-    split: true,
+    win: Party.Dem,
+    split: false,
   },
   {
     name: "Maryland",
@@ -230,11 +227,8 @@ export const stateData: Array<State> = [
     abbreviation: "NE",
     type: Importance.NotSignificant,
     electoralVotes: 5,
-    win: [
-      [Party.Rep, 4, "State, NE-3, NE-1"],
-      [Party.Dem, 1, "NE-2"],
-    ],
-    split: true,
+    win: Party.Rep,
+    split: false,
   },
 
   {
